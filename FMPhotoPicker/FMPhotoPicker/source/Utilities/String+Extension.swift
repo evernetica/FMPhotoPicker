@@ -15,4 +15,10 @@ class Strings {
   }
 }
 
+extension String {
+  var localized: String {
+        NSLocalizedString(self, comment: " ")
+    }
+}
+
 private final class BundleToken {}
