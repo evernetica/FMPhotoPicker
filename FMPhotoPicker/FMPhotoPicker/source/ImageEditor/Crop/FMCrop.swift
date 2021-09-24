@@ -41,14 +41,14 @@ public enum FMCrop: FMCroppable {
         }
     }
     
-    public func name(strings: [String: String]) -> String? {
+    public func name() -> String? {
         switch self {
-        case .ratio4x3: return strings["editor_crop_ratio4x3"]
-        case .ratio16x9: return strings["editor_crop_ratio16x9"]
-        case .ratio9x16: return strings["editor_crop_ratio9x16"]
-        case .ratioCustom: return strings["editor_crop_ratioCustom"]
-        case .ratioOrigin: return strings["editor_crop_ratioOrigin"]
-        case .ratioSquare: return strings["editor_crop_ratioSquare"]
+        case .ratio4x3: return Strings.tr("Localizable", "editor_crop_ratio4x3")
+        case .ratio16x9: return Strings.tr("Localizable", "editor_crop_ratio16x9")
+        case .ratio9x16: return Strings.tr("Localizable", "editor_crop_ratio9x16")
+        case .ratioCustom: return Strings.tr("Localizable", "editor_crop_ratioCustom")
+        case .ratioOrigin: return Strings.tr("Localizable", "editor_crop_ratioOrigin")
+        case .ratioSquare: return Strings.tr("Localizable", "editor_crop_ratioSquare")
         }
     }
     

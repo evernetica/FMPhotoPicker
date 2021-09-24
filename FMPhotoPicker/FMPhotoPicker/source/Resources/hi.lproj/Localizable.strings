@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  FMPhotoPicker
+
+  Created by Ihor Tovkach on 24.09.2021.
+  Copyright © 2021 Cong Nguyen. All rights reserved.
+*/
+
+//"picker_button_cancel" = "Cancel";
+"picker_button_select_done" = "किया हुआ";
+"picker_warning_over_image_select_format" = "आप अधिकतम %d छवियों का चयन कर सकते हैं";
+"picker_warning_over_video_select_format" = "आप अधिकतम %d वीडियो का चयन कर सकते हैं";
+
+"present_title_photo_created_date_format" = "yyyy/M/d";
+"present_button_back" = "वापस";
+"present_button_edit_image" = "संपादित करें";
+
+"editor_button_cancel" = "रद्द करना";
+"editor_button_done" = "किया हुआ";
+"editor_menu_filter" = "फ़िल्टर";
+"editor_menu_crop" = "काटना";
+"editor_menu_crop_button_reset" = "रीसेट";
+"editor_menu_crop_button_rotate" = "घुमाएँ";
+
+"editor_crop_ratio4x3" = "4:3";
+"editor_crop_ratio16x9" = "16:9";
+"editor_crop_ratio9x16" = "9:16";
+"editor_crop_ratioCustom" = "रीति";
+"editor_crop_ratioOrigin" = "मूल";
+"editor_crop_ratioSquare" = "वर्ग";
+
+"permission_dialog_title" = "Squirrel";
+"permission_dialog_message" = "Squirrel फोटो लाइब्रेरी का उपयोग करना चाहता है";
+"permission_button_ok" = "ठीक है";
+"permission_button_cancel" = "रद्द करना";

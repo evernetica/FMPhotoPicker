@@ -27,7 +27,7 @@ class FMPresenterEditMenuView: UIView {
         // editButton.widthAnchor.constraint(greaterThanOrEqualToConstant: 80).isActive = true
         editButton.heightAnchor.constraint(greaterThanOrEqualToConstant: 40).isActive = true
         editButton.setTitleColor(.black, for: .normal)
-        editButton.setTitle(config.strings["present_button_edit_image"], for: .normal)
+        editButton.setTitle(Strings.tr("Localizable", "present_button_edit_image"), for: .normal)
         editButton.titleLabel?.font = UIFont.systemFont(ofSize: config.titleFontSize, weight: .bold)
         
         editButton.addTarget(self, action: #selector(editButtonTarget), for: .touchUpInside)

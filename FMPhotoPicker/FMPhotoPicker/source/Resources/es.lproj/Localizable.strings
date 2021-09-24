@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  FMPhotoPicker
+
+  Created by Ihor Tovkach on 24.09.2021.
+  Copyright © 2021 Cong Nguyen. All rights reserved.
+*/
+//"picker_button_cancel" = "Cancel";
+"picker_button_select_done" = "Hecho";
+"picker_warning_over_image_select_format" = "Puede seleccionar un máximo de %d imágenes";
+"picker_warning_over_video_select_format" = "Puede seleccionar un máximo de %d videos";
+
+"present_title_photo_created_date_format" = "yyyy/M/d";
+"present_button_back" = "atrás";
+"present_button_edit_image" = "Editar";
+
+"editor_button_cancel" = "Cancelar";
+"editor_button_done" = "Hecho";
+"editor_menu_filter" = "Filtrar";
+"editor_menu_crop" = "Cultivo";
+"editor_menu_crop_button_reset" = "Reiniciar";
+"editor_menu_crop_button_rotate" = "Girar";
+
+"editor_crop_ratio4x3" = "4:3";
+"editor_crop_ratio16x9" = "16:9";
+"editor_crop_ratio9x16" = "9:16";
+"editor_crop_ratioCustom" = "Personalizado";
+"editor_crop_ratioOrigin" = "Origen";
+"editor_crop_ratioSquare" = "Cuadrado";
+
+"permission_dialog_title" = "Squirrel";
+"permission_dialog_message" = "Squirrel quiere acceder a la biblioteca de fotos";
+"permission_button_ok" = "Okay";
+"permission_button_cancel" = "Cancelar";
+

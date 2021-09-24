@@ -51,7 +51,7 @@ class FMPhotoPresenterViewController: UIViewController {
     
     private lazy var formatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = config.strings["present_title_photo_created_date_format"]
+        formatter.dateFormat = Strings.tr("Localizable", "present_title_photo_created_date_format")
         formatter.calendar = Calendar(identifier: .gregorian)
         return formatter
     }()
@@ -146,10 +146,10 @@ class FMPhotoPresenterViewController: UIViewController {
         }
         
         // set button title
-        self.backButton.setTitle(config.strings["present_button_back"], for: .normal)
+        self.backButton.setTitle(Strings.tr("Localizable", "present_button_back"), for: .normal)
         self.backButton.titleLabel!.font = UIFont.boldSystemFont(ofSize: config.titleFontSize)
         
-        self.doneButton.setTitle(config.strings["picker_button_select_done"], for: .normal)
+        self.doneButton.setTitle(Strings.tr("Localizable", "picker_button_select_done"), for: .normal)
         self.doneButton.titleLabel!.font = UIFont.boldSystemFont(ofSize: config.titleFontSize)
     }
     

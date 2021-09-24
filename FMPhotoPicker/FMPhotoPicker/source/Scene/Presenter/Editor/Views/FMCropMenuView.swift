@@ -13,11 +13,11 @@ enum FMCropControl {
     case resetFrameWithoutChangeRatio
     case rotate
     
-    func name(from stringConfig: [String: String]) -> String {
+    func name() -> String {
         switch self {
-        case .resetFrameWithoutChangeRatio: return stringConfig["editor_menu_crop_button_reset"]!
-        case .resetAll: return stringConfig["editor_menu_crop_button_reset"]!
-        case .rotate: return stringConfig["editor_menu_crop_button_rotate"]!
+        case .resetFrameWithoutChangeRatio: return Strings.tr("Localizable", "editor_menu_crop_button_reset")
+        case .resetAll: return Strings.tr("Localizable", "editor_menu_crop_button_reset")
+        case .rotate: return Strings.tr("Localizable", "editor_menu_crop_button_rotate")
         }
     }
     
@@ -129,14 +129,19 @@ extension FMCropMenuView: UICollectionViewDataSource {
         
         if indexPath.section == 0 {
             // menu items
-            cell.name.text = menuItems[indexPath.row].name(from: config.strings)
+            cell.name.text = menuItems[indexPath.row].name()
             cell.imageView.image = menuItems[indexPath.row].icon()
+            let tintedImage = cell.imageView.image?.withRenderingMode(.alwaysTemplate)
+            cell.imageView.image = tintedImage
+            cell.imageView.tintColor = kBlackColor
         } else if indexPath.section == 1 {
             // crop items
             let cropItem = cropItems[indexPath.row]
-            cell.name.text = cropItem.name(strings: config.strings)
+            cell.name.text = cropItem.name()
             cell.imageView.image = cropItem.icon()
-            
+            let tintedImage = cell.imageView.image?.withRenderingMode(.alwaysTemplate)
+            cell.imageView.image = tintedImage
+            cell.imageView.tintColor = kBlackColor
             if selectedCrop?.identifier() == cropItem.identifier() {
                 cell.setSelected()
             }

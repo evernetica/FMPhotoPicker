@@ -89,9 +89,10 @@ public class FMPhotoPickerViewController: UIViewController {
         self.doneButton.isHidden = true
         
         // set button title
-        self.cancelButton.setTitle(config.strings["picker_button_cancel"], for: .normal)
+        
+        self.cancelButton.setTitle(Strings.tr("Localizable", "editor_button_cancel"), for: .normal)
         self.cancelButton.titleLabel!.font = UIFont.boldSystemFont(ofSize: config.titleFontSize)
-        self.doneButton.setTitle(config.strings["picker_button_select_done"], for: .normal)
+        self.doneButton.setTitle(Strings.tr("Localizable", "picker_button_select_done"), for: .normal)
         self.doneButton.titleLabel!.font = UIFont.boldSystemFont(ofSize: config.titleFontSize)
     }
     
@@ -109,13 +110,13 @@ public class FMPhotoPickerViewController: UIViewController {
             self.fetchPhotos()
         } else {
             let okAction = UIAlertAction(
-                title: config.strings["permission_button_ok"],
+                title: Strings.tr("Localizable", "permission_button_ok"),
                 style: .default) { (_) in
                     Helper.requestAuthorizationForPhotoAccess(authorized: self.fetchPhotos, rejected: Helper.openIphoneSetting)
             }
 
             let cancelAction = UIAlertAction(
-                title: config.strings["permission_button_cancel"],
+                title: Strings.tr("Localizable", "permission_button_cancel"),
                 style: .cancel,
                 handler: nil)
 
@@ -123,8 +124,8 @@ public class FMPhotoPickerViewController: UIViewController {
                 in: self,
                 okAction: okAction,
                 cancelAction: cancelAction,
-                title: config.strings["permission_dialog_title"],
-                message: config.strings["permission_dialog_message"]
+                title: Strings.tr("Localizable", "permission_dialog_title"),
+                message: Strings.tr("Localizable", "permission_dialog_message")
                 )
         }
     }
@@ -251,14 +252,14 @@ extension FMPhotoPickerViewController: UICollectionViewDataSource {
                 if self.dataSource.countSelectedPhoto(byType: .image) >= self.config.maxImage {
                     canBeAdded = false
                     let warning = FMWarningView.shared
-                    warning.message = String(format: config.strings["picker_warning_over_image_select_format"]!, self.config.maxImage)
+                    warning.message = String(format: Strings.tr("Localizable", "picker_warning_over_image_select_format"), self.config.maxImage)
                     warning.showAndAutoHide()
                 }
             case .video:
                 if self.dataSource.countSelectedPhoto(byType: .video) >= self.config.maxVideo {
                     canBeAdded = false
                     let warning = FMWarningView.shared
-                    warning.message = String(format: config.strings["picker_warning_over_video_select_format"]!, self.config.maxVideo)
+                    warning.message = String(format: Strings.tr("Localizable", "picker_warning_over_video_select_format"), self.config.maxVideo)
                     warning.showAndAutoHide()
                 }
             case .unsupported:
