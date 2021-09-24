@@ -59,7 +59,7 @@ class FMCropScrollView: UIScrollView {
             contentInsetAdjustmentBehavior = .never
         }
         
-        backgroundColor = .white
+        backgroundColor = kWhiteColor
     }
     
     required init?(coder aDecoder: NSCoder) {

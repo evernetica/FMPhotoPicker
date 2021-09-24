@@ -47,7 +47,7 @@ class FMWarningView {
         
         self.messageLabel = UILabel()
         self.messageLabel.translatesAutoresizingMaskIntoConstraints = false
-        self.messageLabel.textColor = .white
+        self.messageLabel.textColor = kWhiteColor
         self.messageLabel.font = UIFont.systemFont(ofSize: 15)
         self.messageLabel.text = self.message
         self.messageLabel.numberOfLines = 2

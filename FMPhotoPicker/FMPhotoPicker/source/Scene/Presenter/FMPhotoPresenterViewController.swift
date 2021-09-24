@@ -86,7 +86,7 @@ class FMPhotoPresenterViewController: UIViewController {
     
     override func loadView() {
         view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = kWhiteColor
         setupView()
     }
     
@@ -318,7 +318,7 @@ private extension FMPhotoPresenterViewController {
 //        private weak var unsafeAreaBottomView: UIView!
         
         let headerView = UIView()
-        headerView.backgroundColor = .white
+        headerView.backgroundColor = kWhiteColor
         
         headerView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(headerView)
@@ -404,7 +404,7 @@ private extension FMPhotoPresenterViewController {
         self.numberOfSelectedPhotoContainer = numberOfSelectedPhotoContainer
         numberOfSelectedPhotoContainer.layer.cornerRadius = 14
         numberOfSelectedPhotoContainer.layer.masksToBounds = true
-        numberOfSelectedPhotoContainer.backgroundColor = kRedColor
+        numberOfSelectedPhotoContainer.backgroundColor = kGoldColor
         
         numberOfSelectedPhotoContainer.translatesAutoresizingMaskIntoConstraints = false
         menuContainer.addSubview(numberOfSelectedPhotoContainer)
@@ -483,7 +483,7 @@ private extension FMPhotoPresenterViewController {
         
         let bottomViewContainer = UIView()
         self.bottomViewContainer = bottomViewContainer
-        bottomViewContainer.backgroundColor = .white
+        bottomViewContainer.backgroundColor = kWhiteColor
         
         bottomViewContainer.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(bottomViewContainer)

@@ -21,7 +21,7 @@ class FMLoadingView {
         transparentView.translatesAutoresizingMaskIntoConstraints = false
         
         indicator = UIActivityIndicatorView()
-        indicator.color = .white
+        indicator.color = kWhiteColor
         
         transparentView.addSubview(indicator)
         

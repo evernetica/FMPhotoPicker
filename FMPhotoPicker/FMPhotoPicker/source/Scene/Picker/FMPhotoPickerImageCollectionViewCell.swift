@@ -83,7 +83,7 @@ class FMPhotoPickerImageCollectionViewCell: UICollectionViewCell {
         let videoLengthLabel = UILabel()
         self.videoLengthLabel = videoLengthLabel
         videoLengthLabel.font = .systemFont(ofSize: 12, weight: .medium)
-        videoLengthLabel.textColor = .white
+        videoLengthLabel.textColor = kWhiteColor
         
         videoInfoView.addSubview(videoLengthLabel)
         videoLengthLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -94,7 +94,7 @@ class FMPhotoPickerImageCollectionViewCell: UICollectionViewCell {
         
         let cellFilterContainer = UIView()
         self.cellFilterContainer = cellFilterContainer
-        cellFilterContainer.layer.borderColor = kRedColor.cgColor
+        cellFilterContainer.layer.borderColor = kGoldColor.cgColor
         cellFilterContainer.layer.borderWidth = 2
         cellFilterContainer.isHidden = true
         
@@ -124,7 +124,7 @@ class FMPhotoPickerImageCollectionViewCell: UICollectionViewCell {
         let selectedIndex = UILabel()
         self.selectedIndex = selectedIndex
         selectedIndex.font = .systemFont(ofSize: 15)
-        selectedIndex.textColor = .white
+        selectedIndex.textColor = kWhiteColor
         
         contentView.addSubview(selectedIndex)
         selectedIndex.translatesAutoresizingMaskIntoConstraints = false

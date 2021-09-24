@@ -39,7 +39,7 @@ class FMPlaybackProgressView: UIControl {
     }
     
     var trackHighlightTintColor = UIColor(red: 0.0, green: 0.45, blue: 0.94, alpha: 1.0)
-    var thumbTintColor = UIColor.white
+    var thumbTintColor = kWhiteColor
     var curvaceousness: CGFloat = 1.0
     var thumbIconWidth: CGFloat = 6.0
     

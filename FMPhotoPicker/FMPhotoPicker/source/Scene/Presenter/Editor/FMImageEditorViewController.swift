@@ -159,7 +159,7 @@ public class FMImageEditorViewController: UIViewController {
     
     public override func loadView() {
         view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = kWhiteColor
         setupView()
     }
     
@@ -197,8 +197,8 @@ public class FMImageEditorViewController: UIViewController {
             self.cropMenuButton.setImage(cropTintIcon, for: .normal)
             
             // default color
-            self.filterMenuButton.setTitleColor(kRedColor, for: .normal)
-            self.filterMenuButton.tintColor = kRedColor
+            self.filterMenuButton.setTitleColor(kGoldColor, for: .normal)
+            self.filterMenuButton.tintColor = kGoldColor
             
             self.cropMenuButton.setTitleColor(kBlackColor, for: .normal)
             self.cropMenuButton.tintColor = kBlackColor
@@ -351,8 +351,8 @@ public class FMImageEditorViewController: UIViewController {
     }
     
     private func openFiltersMenu() {
-        filterMenuButton.tintColor = kRedColor
-        filterMenuButton.setTitleColor(kRedColor, for: .normal)
+        filterMenuButton.tintColor = kGoldColor
+        filterMenuButton.setTitleColor(kGoldColor, for: .normal)
         cropMenuButton.tintColor = kBlackColor
         cropMenuButton.setTitleColor(kBlackColor, for: .normal)
         
@@ -369,8 +369,8 @@ public class FMImageEditorViewController: UIViewController {
     }
     
     private func openCropsMenu() {
-        cropMenuButton.tintColor = kRedColor
-        cropMenuButton.setTitleColor(kRedColor, for: .normal)
+        cropMenuButton.tintColor = kGoldColor
+        cropMenuButton.setTitleColor(kGoldColor, for: .normal)
         filterMenuButton.tintColor = kBlackColor
         filterMenuButton.setTitleColor(kBlackColor, for: .normal)
         
@@ -501,7 +501,7 @@ private extension FMImageEditorViewController {
     func setupView() {
         let headerView = UIView()
         self.headerView = headerView
-        headerView.backgroundColor = .white
+        headerView.backgroundColor = kWhiteColor
         
         headerView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(headerView)
@@ -564,7 +564,7 @@ private extension FMImageEditorViewController {
         
         let bottomViewContainer = UIView()
         self.bottomViewContainer = bottomViewContainer
-        bottomViewContainer.backgroundColor = .white
+        bottomViewContainer.backgroundColor = kWhiteColor
         
         bottomViewContainer.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(bottomViewContainer)
@@ -613,7 +613,7 @@ private extension FMImageEditorViewController {
         
         let subMenuContainer = UIView()
         self.subMenuContainer = subMenuContainer
-        subMenuContainer.backgroundColor = .white
+        subMenuContainer.backgroundColor = kWhiteColor
         
         subMenuContainer.translatesAutoresizingMaskIntoConstraints = false
         bottomViewContainer.addSubview(subMenuContainer)

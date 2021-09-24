@@ -74,7 +74,7 @@ public class FMPhotoPickerViewController: UIViewController {
     
     public override func loadView() {
         view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = kWhiteColor
         initializeViews()
         setupView()
     }
@@ -359,7 +359,7 @@ extension FMPhotoPickerViewController: UIViewControllerTransitioningDelegate {
 private extension FMPhotoPickerViewController {
     func initializeViews() {
         let headerView = UIView()
-        headerView.backgroundColor = .white
+        headerView.backgroundColor = kWhiteColor
         
         headerView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(headerView)
@@ -430,7 +430,7 @@ private extension FMPhotoPickerViewController {
         self.numberOfSelectedPhotoContainer = numberOfSelectedPhotoContainer
         numberOfSelectedPhotoContainer.layer.cornerRadius = 14
         numberOfSelectedPhotoContainer.layer.masksToBounds = true
-        numberOfSelectedPhotoContainer.backgroundColor = kRedColor
+        numberOfSelectedPhotoContainer.backgroundColor = kGoldColor
         
         numberOfSelectedPhotoContainer.translatesAutoresizingMaskIntoConstraints = false
         menuContainer.addSubview(numberOfSelectedPhotoContainer)
@@ -444,7 +444,7 @@ private extension FMPhotoPickerViewController {
         let numberOfSelectedPhoto = UILabel()
         self.numberOfSelectedPhoto = numberOfSelectedPhoto
         numberOfSelectedPhoto.font = .systemFont(ofSize: 15)
-        numberOfSelectedPhoto.textColor = .white
+        numberOfSelectedPhoto.textColor = kWhiteColor
         numberOfSelectedPhoto.textAlignment = .center
         
         numberOfSelectedPhoto.translatesAutoresizingMaskIntoConstraints = false

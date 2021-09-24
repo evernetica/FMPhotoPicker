@@ -68,7 +68,7 @@ class FMPlaybackControlView: UIView {
                                              constant: (playbackProgressView.thumbWidth - playbackProgressView.thumbIconWidth) / 2).isActive = true
         currentTimeLabel.topAnchor.constraint(equalTo: playbackProgressView.bottomAnchor, constant: 2).isActive = true
         currentTimeLabel.font = UIFont.systemFont(ofSize: 13)
-        currentTimeLabel.textColor = .white
+        currentTimeLabel.textColor = kWhiteColor
         currentTimeLabel.text = "0:00"
         currentTimeLabel.textColor = UIColor(red: 65/255, green: 65/255, blue: 65/255, alpha: 1)
         
@@ -77,7 +77,7 @@ class FMPlaybackControlView: UIView {
                                              constant: -(playbackProgressView.thumbWidth - playbackProgressView.thumbIconWidth) / 2).isActive = true
         totalTimeLabel.topAnchor.constraint(equalTo: playbackProgressView.bottomAnchor, constant: 2).isActive = true
         totalTimeLabel.font = UIFont.systemFont(ofSize: 13)
-        totalTimeLabel.textColor = .white
+        totalTimeLabel.textColor = kWhiteColor
         totalTimeLabel.text = "0:00"
         totalTimeLabel.textColor = UIColor(red: 65/255, green: 65/255, blue: 65/255, alpha: 1)
         
