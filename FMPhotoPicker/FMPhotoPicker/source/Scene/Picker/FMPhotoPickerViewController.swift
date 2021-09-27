@@ -89,7 +89,7 @@ public class FMPhotoPickerViewController: UIViewController {
         self.doneButton.isHidden = true
         
         // set button title
-        let path = Bundle(for: FMPhotoPickerViewController.self).path(forResource: "FMPhotoPicker", ofType: "bundle")!
+        let path = Bundle(for: FMPhotoPickerViewController.self).path(forResource: "FMPhotoPicker-FMPhotoPicker", ofType: "bundle")!
         let bundle = Bundle(path: path) ?? Bundle.main
         self.cancelButton.setTitle(NSLocalizedString("editor_button_cancel", bundle: bundle, comment: "my_comment"), for: .normal)
         self.cancelButton.titleLabel!.font = UIFont.boldSystemFont(ofSize: config.titleFontSize)
