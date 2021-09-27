@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		229A926024B0BDFE00AA33C3 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A925F24B0BDFE00AA33C3 /* Bundle+Extension.swift */; };
 		8452E9082701D1B4008C1FC0 /* SharedLocaleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452E9072701D1B4008C1FC0 /* SharedLocaleManager.swift */; };
+		8452E90A2701DA3F008C1FC0 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452E9092701DA3F008C1FC0 /* LocalizationManager.swift */; };
 		84F465FB26FDC86200701B26 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 84F465FD26FDC86200701B26 /* Localizable.stringsdict */; };
 		84F4660026FDC96500701B26 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F465FF26FDC96500701B26 /* Localize.swift */; };
 		84F4660826FDCC8300701B26 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84F465F226FDBF3000701B26 /* Localizable.strings */; };
@@ -79,6 +80,7 @@
 /* Begin PBXFileReference section */
 		229A925F24B0BDFE00AA33C3 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		8452E9072701D1B4008C1FC0 /* SharedLocaleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocaleManager.swift; sourceTree = "<group>"; };
+		8452E9092701DA3F008C1FC0 /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
 		84F465F126FDBF3000701B26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		84F465F326FDBF3500701B26 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		84F465FC26FDC86200701B26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				CED2E98920453D6500AB8206 /* Editor */,
 				CE0C5FB4201ABD460040A03A /* FMPhotoPresenterViewController.swift */,
 				8452E9072701D1B4008C1FC0 /* SharedLocaleManager.swift */,
+				8452E9092701DA3F008C1FC0 /* LocalizationManager.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 				CED2E9A32048E6D800AB8206 /* FMImageEditor.swift in Sources */,
 				CE238A07201EB38000CEBCB5 /* FMScalingImageView.swift in Sources */,
 				CEE311B72022E29700ABBE0C /* FMPhotosDataSource.swift in Sources */,
+				8452E90A2701DA3F008C1FC0 /* LocalizationManager.swift in Sources */,
 				CE1A5BCA204D3EB2009EA821 /* FMCropCropBoxView.swift in Sources */,
 				CE42F59A20515BA9006D2DC5 /* FMCropTranslucencyView.swift in Sources */,
 				CE510905202AFD80003CBFA5 /* FMPhotoPickerBatchSelector.swift in Sources */,

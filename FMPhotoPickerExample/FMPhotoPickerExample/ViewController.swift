@@ -113,10 +113,9 @@ class ViewController: UIViewController, FMPhotoPickerViewControllerDelegate, FMI
     }
     
     @IBAction func openEditor(_ sender: Any) {
-        let vc = FMImageEditorViewController(config: config(), sourceImage: previewImageView.image!)
+        let vc = FMImageEditorViewController(config: config(), sourceImage: previewImageView.image!, language: nil)
         vc.delegate = self
         
         self.present(vc, animated: true)
     }
 }
-
