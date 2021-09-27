@@ -121,7 +121,7 @@ class FMPhotoPresenterViewController: UIViewController {
                                                        fmPhotoAsset: photo,
                                                        filteredImage: filteredImage,
                                                        originalThumb: originalThumb,
-                                                       language: LocalizationManager.currentLanguage)
+                                                       language: nil)
             editorVC.didEndEditting = { [unowned self] viewDidUpdate in
                 if let photoVC = self.pageViewController.viewControllers?.first as? FMPhotoViewController {
                     photoVC.reloadPhoto(complete: viewDidUpdate)

@@ -98,9 +98,9 @@ public class FMImageEditorViewController: UIViewController {
     private var config: FMPhotoPickerConfig
     
     // MARK - Init
-    public init(config: FMPhotoPickerConfig, fmPhotoAsset: FMPhotoAsset, filteredImage: UIImage, originalThumb: UIImage, language: Language?) {
+    public init(config: FMPhotoPickerConfig, fmPhotoAsset: FMPhotoAsset, filteredImage: UIImage, originalThumb: UIImage, language: String?) {
         self.config = config
-        LocalizationManager.setLanguage(language)
+        LocalizationManager.setLanguage(Language.init(code: language))
         self.fmPhotoAsset = fmPhotoAsset
         
         self.originalThumb = originalThumb
@@ -122,9 +122,9 @@ public class FMImageEditorViewController: UIViewController {
         modalPresentationStyle = .fullScreen
     }
     
-    public init(config: FMPhotoPickerConfig, sourceImage: UIImage, language: Language?) {
+    public init(config: FMPhotoPickerConfig, sourceImage: UIImage, language: String?) {
         self.config = config
-        LocalizationManager.setLanguage(language)
+        LocalizationManager.setLanguage(Language.init(code: language))
         var forceCropType: FMCroppable? = nil
         if config.forceCropEnabled, let firstCrop = config.availableCrops?.first {
             forceCropType = firstCrop
