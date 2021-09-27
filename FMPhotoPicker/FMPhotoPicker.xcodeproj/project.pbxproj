@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		229A926024B0BDFE00AA33C3 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A925F24B0BDFE00AA33C3 /* Bundle+Extension.swift */; };
 		84F465FB26FDC86200701B26 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 84F465FD26FDC86200701B26 /* Localizable.stringsdict */; };
-		84F4660026FDC96500701B26 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F465FF26FDC96500701B26 /* String+Extension.swift */; };
+		84F4660026FDC96500701B26 /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F465FF26FDC96500701B26 /* Locale.swift */; };
 		84F4660826FDCC8300701B26 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84F465F226FDBF3000701B26 /* Localizable.strings */; };
 		CE0C5FB5201ABD460040A03A /* FMPhotoPresenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C5FB4201ABD460040A03A /* FMPhotoPresenterViewController.swift */; };
 		CE0C5FB9201AC4870040A03A /* FMZoomInAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C5FB8201AC4870040A03A /* FMZoomInAnimationController.swift */; };
@@ -81,7 +81,7 @@
 		84F465F326FDBF3500701B26 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		84F465FC26FDC86200701B26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		84F465FE26FDC86300701B26 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = hi; path = hi.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
-		84F465FF26FDC96500701B26 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		84F465FF26FDC96500701B26 /* Locale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locale.swift; sourceTree = "<group>"; };
 		84F4660A26FDD81600701B26 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		84F4660B26FDD81600701B26 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = es; path = es.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		84F4660C26FDD8B100701B26 /* ne */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ne; path = ne.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -275,7 +275,7 @@
 				CE762F132060DE54002D6E31 /* FMAlertable.swift */,
 				CE213CB62075C07300026B17 /* Const.swift */,
 				229A925F24B0BDFE00AA33C3 /* Bundle+Extension.swift */,
-				84F465FF26FDC96500701B26 /* String+Extension.swift */,
+				84F465FF26FDC96500701B26 /* Locale.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -549,7 +549,7 @@
 				CED2E99B2047D25400AB8206 /* FMFilter.swift in Sources */,
 				CE7D2E94202D8C4500554DE0 /* FMPhotoPickerConfig.swift in Sources */,
 				CEE50D2920196E45005AE708 /* FMPhotoPickerViewController.swift in Sources */,
-				84F4660026FDC96500701B26 /* String+Extension.swift in Sources */,
+				84F4660026FDC96500701B26 /* Locale.swift in Sources */,
 				CED2E99420455B8F00AB8206 /* FMFilterCell.swift in Sources */,
 				CE1D3C592019C25700154980 /* FMPhotoAsset.swift in Sources */,
 				CEDF9C4F203E585F0048D182 /* AVPlayer+Extension.swift in Sources */,
