@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		229A926024B0BDFE00AA33C3 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A925F24B0BDFE00AA33C3 /* Bundle+Extension.swift */; };
+		8452E9082701D1B4008C1FC0 /* SharedLocaleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452E9072701D1B4008C1FC0 /* SharedLocaleManager.swift */; };
 		84F465FB26FDC86200701B26 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 84F465FD26FDC86200701B26 /* Localizable.stringsdict */; };
 		84F4660026FDC96500701B26 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F465FF26FDC96500701B26 /* Localize.swift */; };
 		84F4660826FDCC8300701B26 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84F465F226FDBF3000701B26 /* Localizable.strings */; };
@@ -77,6 +78,7 @@
 
 /* Begin PBXFileReference section */
 		229A925F24B0BDFE00AA33C3 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		8452E9072701D1B4008C1FC0 /* SharedLocaleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocaleManager.swift; sourceTree = "<group>"; };
 		84F465F126FDBF3000701B26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		84F465F326FDBF3500701B26 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		84F465FC26FDC86200701B26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				CE510902202AE80B003CBFA5 /* Viewer */,
 				CED2E98920453D6500AB8206 /* Editor */,
 				CE0C5FB4201ABD460040A03A /* FMPhotoPresenterViewController.swift */,
+				8452E9072701D1B4008C1FC0 /* SharedLocaleManager.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 				CE1A5BC4204D3E6A009EA821 /* FMCropView.swift in Sources */,
 				CEE50D2C20196E45005AE708 /* Helper.swift in Sources */,
 				CED2E9992047D1E100AB8206 /* FMFilterable.swift in Sources */,
+				8452E9082701D1B4008C1FC0 /* SharedLocaleManager.swift in Sources */,
 				CEDF9C3F203ADB0E0048D182 /* FMPlaybackControlView.swift in Sources */,
 				CE1A5BCC204D3F6E009EA821 /* FMCropBackgroundView.swift in Sources */,
 				CE1A5BC8204D3E91009EA821 /* FMCropScrollView.swift in Sources */,

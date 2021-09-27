@@ -98,9 +98,9 @@ public class FMImageEditorViewController: UIViewController {
     private var config: FMPhotoPickerConfig
     
     // MARK - Init
-    public init(config: FMPhotoPickerConfig, fmPhotoAsset: FMPhotoAsset, filteredImage: UIImage, originalThumb: UIImage) {
+    public init(config: FMPhotoPickerConfig, fmPhotoAsset: FMPhotoAsset, filteredImage: UIImage, originalThumb: UIImage, locale: Locale) {
         self.config = config
-        
+        SharedLocaleManager.sharedInstance.locale = locale
         self.fmPhotoAsset = fmPhotoAsset
         
         self.originalThumb = originalThumb

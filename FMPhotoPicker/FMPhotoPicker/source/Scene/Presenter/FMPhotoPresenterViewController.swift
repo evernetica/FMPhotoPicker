@@ -44,6 +44,7 @@ class FMPhotoPresenterViewController: UIViewController {
     private var dataSource: FMPhotosDataSource
     
     private var config: FMPhotoPickerConfig
+    private var locale: Locale?
     
     private var currentPhotoViewController: FMPhotoViewController? {
         return pageViewController.viewControllers?.first as? FMPhotoViewController
@@ -119,7 +120,8 @@ class FMPhotoPresenterViewController: UIViewController {
             let editorVC = FMImageEditorViewController(config: self.config,
                                                        fmPhotoAsset: photo,
                                                        filteredImage: filteredImage,
-                                                       originalThumb: originalThumb)
+                                                       originalThumb: originalThumb,
+                                                       locale: self.locale ?? Locale.current)
             editorVC.didEndEditting = { [unowned self] viewDidUpdate in
                 if let photoVC = self.pageViewController.viewControllers?.first as? FMPhotoViewController {
                     photoVC.reloadPhoto(complete: viewDidUpdate)
