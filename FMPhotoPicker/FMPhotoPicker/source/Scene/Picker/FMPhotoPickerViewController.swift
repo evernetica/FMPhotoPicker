@@ -89,7 +89,7 @@ public class FMPhotoPickerViewController: UIViewController {
         self.doneButton.isHidden = true
         
         // set button title
-        let path = Bundle(for: type(of: self)).url(forResource: "FMPhotoPicker", withExtension: "bundle")!
+        let path = Bundle(for: type(of: self)).url(forResource: "FMPhotoPicker", withExtension: "FMPhotoPicker")!
         
         let bundle = Bundle(url: path)!
         self.cancelButton.setTitle(NSLocalizedString("editor_button_cancel", bundle: bundle, comment: ""), for: .normal)
