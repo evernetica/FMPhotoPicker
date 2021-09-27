@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.author        = { "Cong Nguyen" => "congnd@outlook.com" }
   s.ios.deployment_target   = '9.0'
   s.source        = { :git => "https://github.com/congnd/FMPhotoPicker.git", :tag => s.version }
-  s.source_files  = 'Classes', 'FMPhotoPicker/FMPhotoPicker/source/**/*.swift'
+  s.source_files  = 'Classes', 'FMPhotoPicker/FMPhotoPicker/source/**/*.{swift,lproj,strings}'
   s.resources     = ['FMPhotoPicker/FMPhotoPicker/source/Assets.xcassets', 'FMPhotoPicker/FMPhotoPicker/source/**/*.xib']
   s.resource_bundle = { "jp.co.tribalmedia.FMPhotoPicker" => ["FMPhotoPicker/FMPhotoPicker/source/Resources/*.lproj/*.strings"] }
   s.swift_version = ["4.2", "5.0"]
