@@ -122,7 +122,7 @@ public class FMImageEditorViewController: UIViewController {
         modalPresentationStyle = .fullScreen
     }
     
-    public init(config: FMPhotoPickerConfig, sourceImage: UIImage, locale: Locale)) {
+    public init(config: FMPhotoPickerConfig, sourceImage: UIImage, locale: Locale) {
         self.config = config
         SharedLocaleManager.sharedInstance.locale = locale
         var forceCropType: FMCroppable? = nil
