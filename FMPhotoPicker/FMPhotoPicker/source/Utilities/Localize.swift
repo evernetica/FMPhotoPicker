@@ -8,7 +8,7 @@
 
 import Foundation
 
-var locale: Locale? = nil
+public var locale: Locale? = nil
 
 class Strings {
   static func tr(_ table: String, _ key: String, _ args: CVarArg...) -> String {
