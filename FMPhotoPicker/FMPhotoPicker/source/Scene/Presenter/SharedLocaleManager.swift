@@ -15,9 +15,10 @@ class SharedLocaleManager {
         return SharedLocaleManager()
     }()
     
+    private var _locale: Locale?
     var locale: Locale? {
-        get { return self.locale }
-        set { self.locale = newValue }
+        get { return _locale }
+        set { _locale = newValue }
     }
     
 }
