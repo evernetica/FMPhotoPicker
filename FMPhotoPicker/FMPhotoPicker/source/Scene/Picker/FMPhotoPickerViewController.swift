@@ -89,11 +89,9 @@ public class FMPhotoPickerViewController: UIViewController {
         self.doneButton.isHidden = true
         
         // set button title
-        let path = Bundle(for: FMPhotoPickerViewController.self).path(forResource: "jp.co.tribalmedia.FMPhotoPicker", ofType: "bundle")!
-        let bundle = Bundle(path: path) ?? Bundle.main
-        self.cancelButton.setTitle(NSLocalizedString("editor_button_cancel", bundle: bundle, comment: "my_comment"), for: .normal)
+        self.cancelButton.setTitle("editor_button_cancel".localized(), for: .normal)
         self.cancelButton.titleLabel!.font = UIFont.boldSystemFont(ofSize: config.titleFontSize)
-        self.doneButton.setTitle("picker_button_select_done".localized, for: .normal)
+        self.doneButton.setTitle("picker_button_select_done".localized(), for: .normal)
         self.doneButton.titleLabel!.font = UIFont.boldSystemFont(ofSize: config.titleFontSize)
     }
     
@@ -470,5 +468,12 @@ private extension FMPhotoPickerViewController {
             imageCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             imageCollectionView.leftAnchor.constraint(equalTo: view.leftAnchor),
         ])
+    }
+}
+
+
+extension String {
+    func localized(withComment comment: String = "") -> String {
+        return Bundle.main.localizedString(forKey: self, value: "**\(self)**", table: "Localizable")
     }
 }
