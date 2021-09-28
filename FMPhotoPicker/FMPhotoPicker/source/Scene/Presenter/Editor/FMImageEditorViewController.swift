@@ -100,7 +100,7 @@ public class FMImageEditorViewController: UIViewController {
     // MARK - Init
     public init(config: FMPhotoPickerConfig, fmPhotoAsset: FMPhotoAsset, filteredImage: UIImage, originalThumb: UIImage, language: String?) {
         self.config = config
-        LocalizationManager.setLanguage(Language.init(code: language))
+
         self.fmPhotoAsset = fmPhotoAsset
         
         self.originalThumb = originalThumb
