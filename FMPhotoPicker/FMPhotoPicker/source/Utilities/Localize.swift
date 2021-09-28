@@ -10,12 +10,10 @@ import Foundation
 
 class Strings {
   static func tr(_ table: String, _ key: String, _ args: CVarArg...) -> String {
-    let format = NSLocalizedString(key, tableName: table, bundle: Bundle(for: BundleToken.self), comment: "")
+      let format = NSLocalizedString(key, tableName: table, bundle: Bundle.current, comment: "")
       return String(format: format, locale: SharedLocaleManager.shared.locale, arguments: args)
     }
 }
-
-private final class BundleToken {}
 
 public class SharedLocaleManager {
     static let shared = SharedLocaleManager()
