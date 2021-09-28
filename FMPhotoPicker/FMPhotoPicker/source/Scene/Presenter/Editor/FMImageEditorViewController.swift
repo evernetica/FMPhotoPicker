@@ -122,9 +122,11 @@ public class FMImageEditorViewController: UIViewController {
         modalPresentationStyle = .fullScreen
     }
     
-    public init(config: FMPhotoPickerConfig, sourceImage: UIImage, language: String?) {
+    public init(config: FMPhotoPickerConfig, sourceImage: UIImage, locale: Locale = Locale.current) {
+        // Set locale
+        SharedLocaleManager.shared.locale = locale
+
         self.config = config
-        LocalizationManager.setLanguage(Language.init(code: language))
         var forceCropType: FMCroppable? = nil
         if config.forceCropEnabled, let firstCrop = config.availableCrops?.first {
             forceCropType = firstCrop
